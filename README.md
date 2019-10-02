@@ -4,8 +4,8 @@ This project demonstrate on how to develop RESTful API application with CRUD met
 So, make sure you have installed docker and docker-compose ready on your environment. Then, you can follow the setup guide step by step.
 
 ## Setup Guide
-* git clone git@gitlab.com:plutosolutions/php-symfony4-web-api-appication.git
-* cd PHP-Symfony4-Web-API-Application
+* git clone https://gitlab.com/khachornchit/php-symfony4-web-api-appication.git
+* cd php-symfony4-web-api-appication
 * docker-compose build
 * docker-compose up -d
 * docker-compose exec php bash
