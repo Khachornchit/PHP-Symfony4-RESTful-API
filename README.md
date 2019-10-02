@@ -9,8 +9,8 @@ So, make sure you have installed docker and docker-compose ready on your environ
 * docker/docker-compose
 
 ## Setup Guide
-* git clone git@github.com:Khachornchit/PHP-Symfony4-RESTful-API.git
-* cd php-symfony4-web-api-appication
+* git clone https://github.com/Khachornchit/PHP-Symfony4-RESTful-API.git
+* cd PHP-Symfony4-RESTful-API
 * docker-compose build
 * docker-compose up -d
 * docker-compose exec php bash
