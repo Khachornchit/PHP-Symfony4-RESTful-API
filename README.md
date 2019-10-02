@@ -3,6 +3,11 @@ This project demonstrate on how to develop RESTful API application with CRUD met
 
 So, make sure you have installed docker and docker-compose ready on your environment. Then, you can follow the setup guide step by step.
 
+## Stack
+* PHP 7.2, Symfony 4.2
+* MySQL
+* docker/docker-compose
+
 ## Setup Guide
 * git clone https://gitlab.com/khachornchit/php-symfony4-web-api-appication.git
 * cd php-symfony4-web-api-appication
@@ -15,14 +20,14 @@ So, make sure you have installed docker and docker-compose ready on your environ
 	* php bin/console doctrine:migrations:migrate
 * API Endpoint http://localhost:5031/api
 
-## CRUD API
+## RESTful API CRUD
 * POST http://localhost:5031//api/users
 * GET http://localhost:5031//api/users
 * GET http://localhost:5031//api/users/{id}
 * PUT http://localhost:5031//api/users/{id}
 * DELETE http://localhost:5031//api/users/{id}
 
-## Example POST Data
+## Data
 ```
 {
    "username":"username#1",
