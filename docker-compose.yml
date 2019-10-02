@@ -1,0 +1,60 @@
+version: '3'
+services:
+  apache:
+    build: .docker/apache
+    container_name: symfony_api_apache
+    restart: always
+    ports:
+      - 5031:80
+    volumes:
+      - .docker/config/vhosts:/etc/apache2/sites-enabled
+      - .:/home/wwwroot/symfony
+    depends_on:
+      - php
+    networks:
+      - symfony_api_network
+
+  db:
+    image: mysql:5.7
+    container_name: symfony_api_db
+    restart: always
+    ports:
+      - 5032:3306
+    volumes:
+      - data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 1234
+      MYSQL_DATABASE: symfony_api
+    networks:
+      - symfony_api_network
+
+  php:
+    build: .docker/php
+    container_name: symfony_api_php
+    restart: always
+    volumes:
+      - .:/home/wwwroot/symfony
+    depends_on:
+      - db
+    networks:
+      - symfony_api_network
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: symfony_api_phpmyadmin
+    restart: always
+    environment:
+      PMA_HOST: db
+      PMA_PORT: 3306
+    ports:
+      - 5033:80
+    links:
+      - db
+    networks:
+      - symfony_api_network
+
+networks:
+  symfony_api_network:
+
+volumes:
+  data:
