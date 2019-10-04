@@ -1,4 +1,4 @@
-# RESTful API Development with PHPSymfony 4.2
+# RESTful API with PHP Symfony 4.2
 This project demonstrate on how to develop RESTful API application with CRUD method using PHP Symfony 4.2 framework and PHP version 7.2.10, under docker container environment.
 
 So, make sure you have installed docker and docker-compose ready on your environment. Then, you can follow the setup guide step by step.
