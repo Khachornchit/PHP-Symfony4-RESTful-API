@@ -18,14 +18,16 @@ So, make sure you have installed docker and docker-compose ready on your environ
 	* composer install
 	* php bin/console doctrine:database:create
 	* php bin/console doctrine:migrations:migrate
-* API Endpoint http://localhost:5031/api
 
-## RESTful API CRUD
-* POST http://localhost:5031//api/users
-* GET http://localhost:5031//api/users
-* GET http://localhost:5031//api/users/{id}
-* PUT http://localhost:5031//api/users/{id}
-* DELETE http://localhost:5031//api/users/{id}
+## API Endpoint
+* http://localhost:5031/api
+
+## Sample CRUD
+* POST		/users
+* GET		/users
+* GET		/users/{id}
+* PUT		/users/{id}
+* DELETE	/users/{id}
 
 ## Data
 ```
