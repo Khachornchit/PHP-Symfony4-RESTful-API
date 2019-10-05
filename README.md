@@ -3,10 +3,9 @@ This project demonstrate on how to develop RESTful API application with CRUD met
 
 So, make sure you have installed docker and docker-compose ready on your environment. Then, you can follow the setup guide step by step.
 
-## Stack
-* PHP 7.2, Symfony 4.2
-* MySQL
-* docker/docker-compose
+## Technology Stack
+* DevOps	: docker/docker-compose
+* Back-end	: PHP 7.2, Symfony 4.2, MySQL
 
 ## Setup Guide
 * git clone https://github.com/Khachornchit/PHP-Symfony4-RESTful-API.git
