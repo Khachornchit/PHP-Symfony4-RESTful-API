@@ -1,4 +1,4 @@
-# RESTful API with PHP Symfony 4.2
+# Web API Development using PHP Symfony 4.2
 This project demonstrate on how to develop RESTful API application with CRUD method using PHP Symfony 4.2 framework and PHP version 7.2.10, under docker container environment.
 
 So, make sure you have installed docker and docker-compose ready on your environment. Then, you can follow the setup guide step by step.
@@ -18,10 +18,14 @@ So, make sure you have installed docker and docker-compose ready on your environ
 	* php bin/console doctrine:database:create
 	* php bin/console doctrine:migrations:migrate
 
+## phpMyAdmin
+The schema symfony_api would be created automatically.
+* http://localhost:5033
+
 ## API Endpoint
 * http://localhost:5031/api
 
-## Sample CRUD
+## CRUD
 * POST		/users
 * GET		/users
 * GET		/users/{id}
@@ -29,9 +33,20 @@ So, make sure you have installed docker and docker-compose ready on your environ
 * DELETE	/users/{id}
 
 ## Data
+* Example of POST request data
 ```
 {
-   "username":"username#1",
-   "userpassword": "A3450%^&*"
+   "username":"user_1",
+   "userpassword": "A1234!@#$"
+}
+```
+
+* Example of POST response data
+```
+{
+   "id": 1,
+   "username": "user_1",
+   "userpassword": "6e332f71f234958cc24a267256ff00bc7b058ad6",
+   "description": "Password was checked in haveibeenpwned.com"
 }
 ```
