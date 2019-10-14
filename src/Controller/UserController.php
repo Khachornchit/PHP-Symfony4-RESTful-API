@@ -60,7 +60,11 @@ class UserController extends ApiController
                     } else {
                         $created = User::create($request->getContent());
                         $this->userRepository->create($created);
-                        return $this->respondCreated($created);
+                        return $this->respondCreated([
+                            "id" => $created->getId(),
+                            "username" => $created->getUserName(),
+                            "description" => $created->getDescription()
+                        ]);
                     }
                 } catch (exception $e) {
                     return $this->respondValidationError('POST /Users Error!');

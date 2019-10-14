@@ -136,9 +136,9 @@ class User
 //        );
 
         if ($response_code == 200) {
-            $this->setDescription("Password was checked in haveibeenpwned.com");
+            $this->setDescription("Passed verification.");
         } else {
-            $this->setDescription("Password was error checked in haveibeenpwned.com " + $response_code);
+            $this->setDescription("Not passed verification." + $response_code);
         }
     }
 

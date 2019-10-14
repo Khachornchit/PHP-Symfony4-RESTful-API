@@ -36,7 +36,7 @@ The schema symfony_api would be created automatically.
 * Example of POST request data
 ```
 {
-   "username":"user_1",
+   "username":"user1",
    "userpassword": "A1234!@#$"
 }
 ```
@@ -45,8 +45,7 @@ The schema symfony_api would be created automatically.
 ```
 {
    "id": 1,
-   "username": "user_1",
-   "userpassword": "6e332f71f234958cc24a267256ff00bc7b058ad6",
-   "description": "Password was checked in haveibeenpwned.com"
+   "username": "user1",
+   "description": "Passed verification."
 }
 ```
