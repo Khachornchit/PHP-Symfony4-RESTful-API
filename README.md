@@ -11,43 +11,55 @@ So, make sure you have installed docker and docker-compose ready on your environ
 * MySQL
 * PHP 7.2, Symfony 4.2
 * Docker
-* Travis CI | CICD integration
+* Travis CI
 
-## Setup Guide
-* git clone https://github.com/Khachornchit/PHP-Symfony4-RESTful-API.git
-* cd PHP-Symfony4-RESTful-API
-* docker-compose build
-* docker-compose up -d
-* docker-compose exec php bash
-	* cd symfony
-	* composer install
-	* php bin/console doctrine:database:create
-	* php bin/console doctrine:migrations:migrate
+## Pre-requires
+* Install [Docker](https://www.docker.com/)
+
+## Getting started
+* Clone the repository
+```
+git clone https://github.com/Khachornchit/PHP-Symfony4-RESTful-API.git
+```
+* Build the project
+```
+cd PHP-Symfony4-RESTful-API
+docker-compose build
+docker-compose up -d
+```
+* Install dependencies
+```
+docker-compose exec php bash
+cd symfony
+composer install
+php bin/console doctrine:database:create
+php bin/console doctrine:migrations:migrate
+```
 
 ## phpMyAdmin
-The schema symfony_api would be created automatically.
-* http://localhost:5033
+* [phpMyAdmin](http://localhost:5033)
 
 ## API Endpoint
-* http://localhost:5031/api
+* [API Endpoint](http://localhost:5031/api)
 
 ## CRUD
-* POST		/users
-* GET		/users
-* GET		/users/{id}
-* PUT		/users/{id}
-* DELETE	/users/{id}
+```
+POST	/users
+GET		/users
+GET		/users/{id}
+PUT		/users/{id}
+DELETE	/users/{id}
+```
 
 ## Data
-* Example of POST request data
+* Example of request data
 ```
 {
    "username":"user1",
    "userpassword": "A1234!@#$"
 }
 ```
-
-* Example of POST response data
+* Example of response data
 ```
 {
    "id": 1,
