@@ -44,11 +44,11 @@ php bin/console doctrine:migrations:migrate
 
 ## CRUD
 ```
-POST	/users
-GET		/users
-GET		/users/{id}
-PUT		/users/{id}
-DELETE	/users/{id}
+POST /users
+GET /users
+GET /users/{id}
+PUT /users/{id}
+DELETE /users/{id}
 ```
 
 ## Data
