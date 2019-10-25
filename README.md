@@ -11,7 +11,7 @@ So, make sure you have installed docker and docker-compose ready on your environ
 * MySQL
 * PHP 7.2, Symfony 4.2
 * Docker
-* Travis CI
+* CICD Integration
 
 ## Pre-requires
 * Install [Docker](https://www.docker.com/)
