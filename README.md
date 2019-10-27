@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/Khachornchit/PHP-Symfony4-RESTful-API.svg?branch=master)](https://travis-ci.org/Khachornchit/PHP-Symfony4-RESTful-API)
 
 # Web API Development using PHP Symfony 4.2
-This project demonstrate on how to develop RESTful API application with CRUD method using PHP Symfony 4.2 framework and PHP version 7.2.10, under docker container environment.
+It is a sample PHP/Symfony project to develop REST API application with CRUD method using Symfony version 4.2 framework and PHP version 7.2.10, under docker container environment.
 
 So, make sure you have installed docker and docker-compose ready on your environment. Then, you can follow the setup guide step by step.
 
@@ -11,7 +11,6 @@ So, make sure you have installed docker and docker-compose ready on your environ
 * MySQL
 * PHP 7.2, Symfony 4.2
 * Docker
-* Travis CI
 
 ## Pre-requires
 * Install [Docker](https://www.docker.com/)
